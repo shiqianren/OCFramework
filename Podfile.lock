@@ -1,0 +1,55 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - HexColors (2.2.1)
+  - IQKeyboardManager (3.3.7)
+  - Masonry (1.0.2)
+  - MBProgressHUD (1.0.0)
+  - MD5Digest (1.1.0)
+  - MJExtension (3.0.13)
+  - NSData+Base64 (1.0.0)
+  - SDWebImage (3.7.6):
+    - SDWebImage/Core (= 3.7.6)
+  - SDWebImage/Core (3.7.6)
+  - SSKeychain (1.4.1)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.1.0)
+  - HexColors (~> 2.2.1)
+  - IQKeyboardManager
+  - Masonry
+  - MBProgressHUD
+  - MD5Digest (~> 1.1.0)
+  - MJExtension
+  - NSData+Base64 (~> 1.0.0)
+  - SDWebImage (~> 3.7.5)
+  - SSKeychain
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  HexColors: abfd172e329dab59888614ccba6f216cec59289d
+  IQKeyboardManager: 249c3946acf61345c18b038eb50863fe2793e3a8
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MD5Digest: fea371215507cfcdc3c9633d02cffc7fd075ebc3
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  NSData+Base64: 4e84902c4db907a15673474677e57763ef3903e4
+  SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
+  SSKeychain: 55cc80f66f5c73da827e3077f02e43528897db41
+
+PODFILE CHECKSUM: 1a80b1ca66980c9c4612c2a7a2cbc0e69ad80ae7
+
+COCOAPODS: 1.0.0
