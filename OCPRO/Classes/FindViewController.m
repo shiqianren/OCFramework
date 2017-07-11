@@ -1,24 +1,24 @@
 //
-//  ThreeViewController.m
+//  FindViewController.m
 //  OCPRO
 //
-//  Created by shiqianren on 2017/5/3.
+//  Created by shiqianren on 2017/7/11.
 //  Copyright © 2017年 shiqianren. All rights reserved.
 //
 
-#import "ThreeViewController.h"
+#import "FindViewController.h"
 
-@interface ThreeViewController ()
+@interface FindViewController ()
 
 @end
 
-@implementation ThreeViewController
+@implementation FindViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-	self.view.backgroundColor = [UIColor whiteColor];
-	self.title = @"个人";
     // Do any additional setup after loading the view.
+	self.view.backgroundColor = [UIColor whiteColor];
+	self.title = @"发现";
 }
 
 - (void)didReceiveMemoryWarning {

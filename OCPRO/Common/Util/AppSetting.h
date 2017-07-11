@@ -130,7 +130,7 @@
 #define PortraitWidth           [[UIScreen mainScreen] bounds].size.width
 #define PortraitHeight          [[UIScreen mainScreen] bounds].size.height
 #define UIColorRGBA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
-
+#define PorFont(s)  [UIFont systemFontOfSize:(s)]
 // 判断长短屏幕
 #define iPhone5 (([UIScreen mainScreen].bounds.size.height > 480) ? YES : NO)
 // 判断系统版本是否为iOS 7或以上	。

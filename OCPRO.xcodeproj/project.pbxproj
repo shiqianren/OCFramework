@@ -22,6 +22,10 @@
 		84000E8A1EB9F1FC003FF026 /* ProNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84000E891EB9F1FC003FF026 /* ProNavViewController.m */; };
 		84000E8E1EB9F2E7003FF026 /* UIImage+UIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 84000E8D1EB9F2E7003FF026 /* UIImage+UIColor.m */; };
 		84000E911EB9F470003FF026 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84000E901EB9F470003FF026 /* BaseViewController.m */; };
+		843C9A0B1F14A15400B00188 /* SpecialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843C9A0A1F14A15400B00188 /* SpecialViewController.m */; };
+		843C9A0E1F14A16E00B00188 /* FindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843C9A0D1F14A16E00B00188 /* FindViewController.m */; };
+		843C9A111F14A18200B00188 /* ActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843C9A101F14A18200B00188 /* ActivityViewController.m */; };
+		843C9A151F14A58400B00188 /* TitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 843C9A141F14A58400B00188 /* TitleView.m */; };
 		846B7D1B1EF7AE4A00BA32DE /* AFAppDotNetAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 846B7D101EF7AE4A00BA32DE /* AFAppDotNetAPIClient.m */; };
 		846B7D1C1EF7AE4A00BA32DE /* BaseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 846B7D121EF7AE4A00BA32DE /* BaseResponse.m */; };
 		846B7D1D1EF7AE4A00BA32DE /* LSDBaseNetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 846B7D141EF7AE4A00BA32DE /* LSDBaseNetRequest.m */; };
@@ -100,6 +104,14 @@
 		84000E8D1EB9F2E7003FF026 /* UIImage+UIColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+UIColor.m"; path = "../Util/UIImage+UIColor.m"; sourceTree = "<group>"; };
 		84000E8F1EB9F470003FF026 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		84000E901EB9F470003FF026 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		843C9A091F14A15400B00188 /* SpecialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialViewController.h; sourceTree = "<group>"; };
+		843C9A0A1F14A15400B00188 /* SpecialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialViewController.m; sourceTree = "<group>"; };
+		843C9A0C1F14A16E00B00188 /* FindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindViewController.h; sourceTree = "<group>"; };
+		843C9A0D1F14A16E00B00188 /* FindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindViewController.m; sourceTree = "<group>"; };
+		843C9A0F1F14A18200B00188 /* ActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityViewController.h; sourceTree = "<group>"; };
+		843C9A101F14A18200B00188 /* ActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityViewController.m; sourceTree = "<group>"; };
+		843C9A131F14A58400B00188 /* TitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleView.h; sourceTree = "<group>"; };
+		843C9A141F14A58400B00188 /* TitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleView.m; sourceTree = "<group>"; };
 		846B7D0F1EF7AE4A00BA32DE /* AFAppDotNetAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAppDotNetAPIClient.h; sourceTree = "<group>"; };
 		846B7D101EF7AE4A00BA32DE /* AFAppDotNetAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAppDotNetAPIClient.m; sourceTree = "<group>"; };
 		846B7D111EF7AE4A00BA32DE /* BaseResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseResponse.h; sourceTree = "<group>"; };
@@ -223,6 +235,7 @@
 		84000E411EB9C2EB003FF026 /* OCPRO */ = {
 			isa = PBXGroup;
 			children = (
+				843C9A081F14A10E00B00188 /* Classes */,
 				846B7D381EF7B8B400BA32DE /* WebService */,
 				84000E7A1EB9CEB4003FF026 /* Controller */,
 				84000E751EB9CE1D003FF026 /* Common */,
@@ -330,6 +343,29 @@
 				847C330C1EF126020060FD93 /* Wonderful */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		843C9A081F14A10E00B00188 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				843C9A121F14A56100B00188 /* CustomView */,
+				843C9A091F14A15400B00188 /* SpecialViewController.h */,
+				843C9A0A1F14A15400B00188 /* SpecialViewController.m */,
+				843C9A0C1F14A16E00B00188 /* FindViewController.h */,
+				843C9A0D1F14A16E00B00188 /* FindViewController.m */,
+				843C9A0F1F14A18200B00188 /* ActivityViewController.h */,
+				843C9A101F14A18200B00188 /* ActivityViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		843C9A121F14A56100B00188 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				843C9A131F14A58400B00188 /* TitleView.h */,
+				843C9A141F14A58400B00188 /* TitleView.m */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 		846B7D381EF7B8B400BA32DE /* WebService */ = {
@@ -613,14 +649,18 @@
 				84000E801EB9CF07003FF026 /* TwoViewController.m in Sources */,
 				847C32ED1EF0DE7B0060FD93 /* DetailViewController.m in Sources */,
 				846B7D1E1EF7AE4A00BA32DE /* NetWorkObserver.m in Sources */,
+				843C9A151F14A58400B00188 /* TitleView.m in Sources */,
 				847C330B1EF124700060FD93 /* UILabel+Wonderful.m in Sources */,
 				84000E471EB9C2EB003FF026 /* AppDelegate.m in Sources */,
+				843C9A0E1F14A16E00B00188 /* FindViewController.m in Sources */,
 				847C33071EF124700060FD93 /* SXHeadLine.m in Sources */,
 				846B7D341EF7B0E100BA32DE /* NSString+stringDate.m in Sources */,
 				847C330A1EF124700060FD93 /* UIColor+Wonderful.m in Sources */,
 				84000E8A1EB9F1FC003FF026 /* ProNavViewController.m in Sources */,
 				847C32F11EF106AE0060FD93 /* NSObject+ProgressHud.m in Sources */,
 				846B7D221EF7AF6600BA32DE /* Reachability.m in Sources */,
+				843C9A111F14A18200B00188 /* ActivityViewController.m in Sources */,
+				843C9A0B1F14A15400B00188 /* SpecialViewController.m in Sources */,
 				84000E441EB9C2EB003FF026 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

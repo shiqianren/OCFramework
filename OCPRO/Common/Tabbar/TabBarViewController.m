@@ -39,12 +39,12 @@
 
 -(void)setupAllChildViewControllers {
 	OneViewController *one = [[OneViewController alloc] init];
-	[self addChildViewController:one title:@"ONE" imageName:@"tabbar_home" selectedImageName:@"tabbar_home_selected"];
+	[self addChildViewController:one title:@"首页" imageName:@"tabbar_home" selectedImageName:@"tabbar_home_selected"];
 	
 	TwoViewController *two = [[TwoViewController alloc] init];
-	[self addChildViewController:two title:@"TWO" imageName:@"tabbar_discover"  selectedImageName:@"tabbar_discover_selected"];
+	[self addChildViewController:two title:@"探索" imageName:@"tabbar_discover"  selectedImageName:@"tabbar_discover_selected"];
 	ThreeViewController *three = [[ThreeViewController alloc]init];
-	[self addChildViewController:three title:@"THREE" imageName:@"tabbar_profile"  selectedImageName:@"tabbar_profile_selected"];
+	[self addChildViewController:three title:@"个人" imageName:@"tabbar_profile"  selectedImageName:@"tabbar_profile_selected"];
 	
 	
 }
@@ -68,8 +68,6 @@
 	ProNavViewController *nav = [[ProNavViewController alloc] initWithRootViewController:childVc];
 	[self addChildViewController:nav];
 }
-
-
 
 
 - (void)didReceiveMemoryWarning {

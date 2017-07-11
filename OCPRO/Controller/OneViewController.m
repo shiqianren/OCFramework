@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	self.view.backgroundColor = [UIColor whiteColor];
-	self.title = @"FIRST";
+	self.title = @"首页";
 	[self.view addSubview:self.redirectButton];
     // Do any additional setup after loading the view.
 }

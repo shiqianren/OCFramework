@@ -1,23 +1,23 @@
 //
-//  ThreeViewController.m
+//  ActivityViewController.m
 //  OCPRO
 //
-//  Created by shiqianren on 2017/5/3.
+//  Created by shiqianren on 2017/7/11.
 //  Copyright © 2017年 shiqianren. All rights reserved.
 //
 
-#import "ThreeViewController.h"
+#import "ActivityViewController.h"
 
-@interface ThreeViewController ()
+@interface ActivityViewController ()
 
 @end
 
-@implementation ThreeViewController
+@implementation ActivityViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 	self.view.backgroundColor = [UIColor whiteColor];
-	self.title = @"个人";
+	self.title = @"活动";
     // Do any additional setup after loading the view.
 }
 
