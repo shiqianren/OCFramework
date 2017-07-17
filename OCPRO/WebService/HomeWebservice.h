@@ -15,4 +15,6 @@ typedef void(^HomeResponseBlock)(BOOL success,BaseResponse *response);
 
 
 -(void)getGradeList:(HomeResponseBlock)homeResponseBlock;
+
+-(void)getGoods:(HomeResponseBlock)homeResponseBlock;
 @end

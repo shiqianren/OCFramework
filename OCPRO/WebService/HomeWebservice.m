@@ -43,4 +43,24 @@
 }
 
 
+
+-(void)getGoods:(HomeResponseBlock)homeResponseBlock{
+	
+	DidFinishRequestBlock success = ^(id object, NSInteger code){
+		[self Pro_showAlertWithTitle:@"加载数据成功"];
+		homeResponseBlock(YES,object);
+	};
+	
+	DidFailRequestBlock fail = ^ (BaseResponse *object) {
+		if(object.msg.length){
+			[self Pro_showAlertWithTitle:@"加载数据失败"];
+		}
+		homeResponseBlock(NO,object);
+	};
+	
+	[NetWorkRequest sendRequestUseAFN:KURL_GOODS params:nil reqType:REQ_GET eType:NO_ENCRYPT success:success fail:fail];
+
+
+}
+
 @end

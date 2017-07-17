@@ -33,9 +33,9 @@
 - (void)setupAppearance
 {
 	// 配置导航栏默认状态
-	[self.navigationBar setBackgroundImage:[UIImage imageWithColor:[UIColor brownColor]]
+	[self.navigationBar setBackgroundImage:[UIImage imageWithColor:[UIColor whiteColor]]
 							 forBarMetrics:UIBarMetricsDefault];
-	[self.navigationBar setTitleTextAttributes:@{ NSForegroundColorAttributeName : [UIColor whiteColor],
+	[self.navigationBar setTitleTextAttributes:@{ NSForegroundColorAttributeName : [UIColor blackColor],
 												  NSShadowAttributeName : [NSShadow new],
 												  NSFontAttributeName : [UIFont systemFontOfSize:17]}];
 	

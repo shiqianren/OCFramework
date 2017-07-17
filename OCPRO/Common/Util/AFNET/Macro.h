@@ -91,28 +91,11 @@
 
 
 #pragma mark - URL
-//preproduct地址
-//#define kLSDBaseNetURL   @"http://tgcheck.helpedu.com"
-
-//qa地址
-//#define kLSDBaseNetURL   @"https://tgcheck.hengtiansoft.com"
 
 // live qa地址
-#define kLSDBaseNetURL   @"https://tgcheck.hengtiansoft.com/"
+#define kLSDBaseNetURL   @"http://v.higo.meilishuo.com/"
 
-//本地环境
-//#define kLSDBaseNetURL   @"http://172.16.15.120:9080"
 
-//product地址
-//#define   kLSDBaseNetURL    @"https://checkanswer.helpedu.com"
-
-//uat地址
-//#define   kLSDBaseNetURL    @"https://livetg.hengtiansoft.com"
-
-//性能测试地址
-//#define kLSDBaseNetURL   @"http://checkpeg.hengtiansoft.com"
-
-//#define kLSDBaseNetURL   @"http://localhost:8081"
 
 
 #pragma mark - user
