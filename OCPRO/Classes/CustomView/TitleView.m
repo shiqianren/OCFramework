@@ -8,9 +8,11 @@
 
 #import "TitleView.h"
 #import "AppSetting.h"
+#import "UIView+ViewExtension.h"
 @interface TitleView()
 
 @property (nonatomic , weak) UIButton *button;
+@property (nonatomic , weak) UIView *underLine;
 @end
 
 
@@ -22,6 +24,7 @@
 	self = [super initWithFrame:frame];
 	if (self) {
 		[self setupButton];
+		
 	}
 	return self;
 }
@@ -31,6 +34,8 @@
 	[self addBUtton:@"探索"];
 	[self addBUtton:@"发现"];
 }
+
+
 
 -(void)addBUtton:(NSString*)title{
 	
@@ -54,7 +59,7 @@
 	sender.selected  = YES;
 	sender.titleLabel.font = PorFont(18);
 	self.button = sender;
-
+    [self updateUnderLine:sender];
 }
 
 -(void)tagSelected:(NSInteger)tagIndex{
@@ -65,6 +70,16 @@
 	btn.selected = YES;
 	btn.titleLabel.font = PorFont(18);
 	self.button = btn;
+	
+	[self updateUnderLine:btn];
+}
+
+-(void)updateUnderLine:(UIButton *)btn{
+
+	[UIView animateWithDuration:0.5 animations:^{
+		self.underLine.x = btn.x ;
+	}];
+	
 }
 
 
@@ -79,8 +94,19 @@
 		UIButton *btn = self.subviews[i];
 		btn.tag = i;
 		btn.frame = CGRectMake(btnX, btnY, btnW, btnH);
+		if (i == 0){
+			[self addLine:btn];
+		}
 	}
 	
+}
+
+
+-(void)addLine:(UIButton *)btn {
+	UIView *underLine = [[UIView alloc] initWithFrame:CGRectMake(btn.left, btn.bottom, btn.width, 2)];
+	underLine.backgroundColor = [UIColor blackColor];
+	[self addSubview:underLine];
+	self.underLine = underLine;
 }
 
 

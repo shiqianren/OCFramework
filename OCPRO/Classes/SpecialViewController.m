@@ -14,6 +14,7 @@
 #import "MJExtension.h"
 #import "SpecialViewCell.h"
 #import "FindModel.h"
+#import "NSObject+ProgressHud.h"
 #define FindCellName @"HGFindCellName"
 @interface SpecialViewController ()<MyLayoutDelegate,UICollectionViewDataSource,UICollectionViewDelegate>
 
@@ -48,8 +49,11 @@
 
 
 -(void)sendRequest {
+	
+	[self Pro_progress];
 	[[HomeWebservice shareInstance] getGoods:^(BOOL success, BaseResponse *response) {
 		NSLog(@"获取的数据信息-----%@",response.object);
+		
 		NSMutableArray *bannerFrame=[NSMutableArray array];
 		//创建frame模型
 		if(self.findFrames.count<1){
@@ -84,7 +88,7 @@
 		//广告始终显示在最前面
 		[self.findFrames addObjectsFromArray:bannerFrame];
 		[self.findFrames addObjectsFromArray:tempArray];
-		
+		[self BA_hideProgress];
 	  //重新刷新标示图
 	  [self.collectionView reloadData];
 	

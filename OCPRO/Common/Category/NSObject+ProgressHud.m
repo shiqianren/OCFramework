@@ -110,7 +110,7 @@
 		progressHUD.label.text = text;
 		progressHUD.mode = MBProgressHUDModeCustomView;
 		progressHUD.color = [UIColor blackColor];
-		[progressHUD hideAnimated:YES afterDelay:1.5];
+		//[progressHUD hideAnimated:YES afterDelay:1.5];
 	});
 }
 -(void)Pro_progress{

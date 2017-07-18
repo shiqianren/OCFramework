@@ -32,7 +32,7 @@
 /*!
  *  隐藏提示
  */
-- (void)Pro_hideProgress;
+- (void)BA_hideProgress;
 
 /*
  自定义图显示
