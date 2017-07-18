@@ -11,6 +11,7 @@
 #import "Macros.h"
 #import "OneViewController.h"
 #import "DetailViewController.h"
+#import "XRCarouselView.h"
 @interface OneViewController ()
 @property (nonatomic , strong) UIButton *redirectButton;
 @end
@@ -27,6 +28,13 @@
 
 
 -(UIButton *)redirectButton{
+	/**
+	XRCarouselView *view = [XRCarouselView carouselViewWithImageArray:imageUrls describeArray:nil];
+	view.time = 2.0;
+	view.delegate = self;
+	view.frame = self.contentView.bounds;
+	[self.contentView addSubview:view];
+	*/
 	if (!_redirectButton) {
 		_redirectButton = [[UIButton alloc] init];
 		_redirectButton.backgroundColor = [UIColor redColor];

@@ -37,6 +37,7 @@
 		843C9A801F1CAEFA00B00188 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 843C9A7F1F1CAEFA00B00188 /* UIKit.framework */; };
 		843C9A831F1CB70800B00188 /* SpecialShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 843C9A821F1CB70800B00188 /* SpecialShowView.m */; };
 		843C9AB11F1DE64200B00188 /* UIView+ViewExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 843C9AB01F1DE64200B00188 /* UIView+ViewExtension.m */; };
+		843C9AB71F1DFD1300B00188 /* XRCarouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = 843C9AB61F1DFD1300B00188 /* XRCarouselView.m */; };
 		846B7D1B1EF7AE4A00BA32DE /* AFAppDotNetAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 846B7D101EF7AE4A00BA32DE /* AFAppDotNetAPIClient.m */; };
 		846B7D1C1EF7AE4A00BA32DE /* BaseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 846B7D121EF7AE4A00BA32DE /* BaseResponse.m */; };
 		846B7D1D1EF7AE4A00BA32DE /* LSDBaseNetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 846B7D141EF7AE4A00BA32DE /* LSDBaseNetRequest.m */; };
@@ -144,6 +145,8 @@
 		843C9A821F1CB70800B00188 /* SpecialShowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialShowView.m; sourceTree = "<group>"; };
 		843C9AAF1F1DE64200B00188 /* UIView+ViewExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewExtension.h"; sourceTree = "<group>"; };
 		843C9AB01F1DE64200B00188 /* UIView+ViewExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewExtension.m"; sourceTree = "<group>"; };
+		843C9AB51F1DFD1300B00188 /* XRCarouselView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XRCarouselView.h; sourceTree = "<group>"; };
+		843C9AB61F1DFD1300B00188 /* XRCarouselView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XRCarouselView.m; sourceTree = "<group>"; };
 		846B7D0F1EF7AE4A00BA32DE /* AFAppDotNetAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAppDotNetAPIClient.h; sourceTree = "<group>"; };
 		846B7D101EF7AE4A00BA32DE /* AFAppDotNetAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAppDotNetAPIClient.m; sourceTree = "<group>"; };
 		846B7D111EF7AE4A00BA32DE /* BaseResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseResponse.h; sourceTree = "<group>"; };
@@ -411,6 +414,8 @@
 		843C9A5F1F1C932300B00188 /* Third */ = {
 			isa = PBXGroup;
 			children = (
+				843C9AB51F1DFD1300B00188 /* XRCarouselView.h */,
+				843C9AB61F1DFD1300B00188 /* XRCarouselView.m */,
 				843C9A661F1C9CC400B00188 /* MyLayout.h */,
 				843C9A671F1C9CC400B00188 /* MyLayout.m */,
 			);
@@ -738,6 +743,7 @@
 				843C9A831F1CB70800B00188 /* SpecialShowView.m in Sources */,
 				84000E8A1EB9F1FC003FF026 /* ProNavViewController.m in Sources */,
 				847C32F11EF106AE0060FD93 /* NSObject+ProgressHud.m in Sources */,
+				843C9AB71F1DFD1300B00188 /* XRCarouselView.m in Sources */,
 				846B7D221EF7AF6600BA32DE /* Reachability.m in Sources */,
 				843C9A111F14A18200B00188 /* ActivityViewController.m in Sources */,
 				843C9A0B1F14A15400B00188 /* SpecialViewController.m in Sources */,
